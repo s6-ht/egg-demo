@@ -3,8 +3,13 @@
 module.exports = {
   Query: {
     goods(root, { infoId }, ctx) {
-      console.log(ctx.connector.goods.fetchById(infoId), 11111111111111);
       return ctx.connector.goods.fetchById(infoId);
+    },
+  },
+  Mutation: {
+    addGoods(root, params, ctx) {
+      console.log(params);
+      return ctx.connector.goods.addGood(params);
     },
   },
 };

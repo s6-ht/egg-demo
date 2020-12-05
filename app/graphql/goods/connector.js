@@ -12,6 +12,12 @@ class GoodsConnector {
     const goodsInfo = goods.getInfoById(id);
     return goodsInfo;
   }
+  addGood(params) {
+    const goods = this.ctx.service.goods;
+    const result = goods.addGood(params);
+    console.log(result, 111111111111)
+    return result;
+  }
   fetchById(id) {
     return this.fetch(id);
   }

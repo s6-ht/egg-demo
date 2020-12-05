@@ -1,0 +1,10 @@
+type Mutation {
+  addGoods(
+    infoId: Int!
+    title: String!
+    content: String!
+    special: String!
+    price: Int!
+    image: String!
+  ): Goods
+}

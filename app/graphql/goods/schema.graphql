@@ -1,0 +1,15 @@
+# schema 定义，在这里定义商品详情数据对象
+type Goods {
+    # 流水号
+    infoId: Int!
+    # 商品标题
+    title: String!,
+    # 商品内容
+    content: String!,
+    #商品特点
+    special: String!,
+    #商品价格
+    price: Int!,
+    #商品图片
+    image: String!,
+}

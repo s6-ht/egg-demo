@@ -1,0 +1,5 @@
+# 查询总入口，所有查询对象在这定义
+type Query {
+  # goods代表graphql下的goods文件夹
+  goods(infoId: Int!): Goods,
+}
